@@ -1,0 +1,33 @@
+@charset "ISO-8859-1";
+
+@font-face {
+    font-family: walone-bold;
+    font-weight: bold;
+    src: url("../fonts/Z06-Walone Bold.ttf");
+}
+@font-face {
+    font-family: walone-reqular;
+    font-weight: normal;
+    src: url("../fonts/Z06-Walone Regular.ttf");
+}
+@font-face {
+    font-family: walone-Thin;
+    font-weight: 100;
+    src: url("../fonts/Z06-Walone Thin.ttf");
+}
+@font-face {
+    font-family: Cera-Round;
+    font-weight: normal;
+    src: url("../fonts/TypeMates  CeraRoundProRegular.otf");
+}
+
+* {
+    font-family: Cera-Round;
+}
+
+.walone-bold {
+    font-family: walone-bold;
+}
+.walone-regular {
+    font-family: walone-reqular;
+}
