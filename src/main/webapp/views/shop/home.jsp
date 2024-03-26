@@ -217,7 +217,7 @@ if (userObj == null) {
                 	  <c:set var="currentTime" value="<%= new java.util.Date() %>" />
 					    <c:set var="twoDaysAgo" value="<%= new java.util.Date(System.currentTimeMillis() - (2 * 24 * 60 * 60 * 1000)) %>" />
 					    
-					    <c:if test="${order.created_at.after(twoDaysAgo) && order.created_at.before(currentTime)}">
+					    <c:if test="${order.created_at.after(twoDaysAgo) && order.created_at.before(currentTime) && !order.order_status.equals('delivered') && !order.order_status.equals('canceled')}">
 					      <a href="order?action=cancel&orderId=${order.id}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline bg-red-600 shadow text-white px-3 py-2 rounded-md">Cancel</a>
                 	</c:if>
                 </td>
@@ -284,7 +284,7 @@ if (userObj == null) {
 	    	process.querySelector("svg").classList.add("text-blue-600");
 	    	
 	    	//disable the submit button 
-	    	row.querySelector(".btn-status-change").classList.add('hidden');
+	    	//process.querySelector(".btn-status-change").classList.add('hidden');
 	    }
 	    
 	    

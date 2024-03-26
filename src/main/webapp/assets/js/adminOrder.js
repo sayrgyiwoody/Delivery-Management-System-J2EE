@@ -42,7 +42,7 @@ rows.forEach(function(row) {
     	process.querySelector("svg").classList.add("text-blue-600");
     	
     	//disable the submit button 
-    	row.querySelector(".btn-status-change").classList.add('hidden');
+    	//row.querySelector(".btn-status-change").classList.add('hidden');
     }
     
     

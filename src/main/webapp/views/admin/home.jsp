@@ -353,8 +353,7 @@ if (userObj == null) {
 </div>
 
 
-<script src="/DMS/assets/js/adminOrder.js" ></script>
-
+<script src="/DMS/assets/js/adminOrder.js"></script>
 
 
 <%@ include file="../../layout/footer.jsp" %>
